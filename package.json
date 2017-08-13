@@ -1,0 +1,48 @@
+{
+  "name": "curso-boilerplate",
+  "version": "0.0.1",
+  "description": "Boilerplate para estrutura dos repositórios de cursos",
+  "dependencies": {
+    "gh-pages": "^0.12.0",
+    "gitbook-plugin-ace": "^0.3.2",
+    "gitbook-plugin-chart": "^0.2.0",
+    "gitbook-plugin-code-editor": "^1.2.1",
+    "gitbook-plugin-codesnippet": "^1.2.0",
+    "gitbook-plugin-codepen": "^0.1.2",
+    "gitbook-plugin-code-highlighter": "^1.0.7",
+    "gitbook-plugin-disqus": "^0.1.0",
+    "gitbook-plugin-ga": "^1.0.1",
+    "gitbook-plugin-gist": "^1.0.0",
+    "gitbook-plugin-include-codeblock": "^3.0.2",
+    "gitbook-plugin-github": "^2.0.0",
+    "gitbook-plugin-jsfiddle": "^1.0.0",
+    "gitbook-plugin-wabtheme": "^0.0.1",
+    "gitbook-plugin-zingchart": "^2.1.0"
+  },
+  "devDependencies": {
+    "gitbook-cli": "^2.3.0"
+  },
+  "scripts": {
+    "prepare": "gitbook install",
+    "dev": "npm run prepare && gitbook serve",
+    "build": "npm run prepare && rm -rf _book && gitbook build",
+    "publish": "npm run build && ./publish.sh",
+    "pdf": "gitbook pdf ./ ./dist/boilerplate-curso.pdf",
+    "epub": "gitbook epub ./ ./dist/boilerplate-curso.epub"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openschoolbr/boilerplate-curso.git"
+  },
+  "keywords": [
+    "free",
+    "course",
+    "boilerplate"
+  ],
+  "author": "@openschoolbr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/openschoolbr/boilerplate-curso/issues"
+  },
+  "homepage": "https://github.com/openschoolbr/boilerplate-curso#readme"
+}
