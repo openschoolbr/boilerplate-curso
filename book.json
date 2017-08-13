@@ -1,0 +1,34 @@
+{
+  "title": "Boilerplate",
+  "language": "pt-BR",
+  "author": "Open School Brasil",
+  "root": "./manuscript",
+  "structure": {
+    "readme": "readme.md",
+    "glossary": "glossary.md",
+    "summary": "summary.md"
+  },
+  "plugins": [
+    "disqus",
+    "ga",
+    "github",
+    "prism",
+    "-highlight",
+    "github-edit"
+  ],
+  "pluginsConfig": {
+    "disqus": {
+      "shortName": "openschoolbr"
+    },
+    "ga": {
+      "token": ""
+    },
+    "github": {
+      "url": "https://github.com/openschoolbr/boilerplate-curso"
+    },
+    "github-edit": {
+        "repo": "openschoolbr/boilerplate-curso",
+        "branch": "master/manuscript"
+    }
+  }
+}
